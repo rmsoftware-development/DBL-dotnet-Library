@@ -44,7 +44,7 @@ namespace DiscordBotsList.Api.Internal
 		[JsonProperty("date")]
 		internal DateTime approvedAt;
 
-		[JsonProperty("certified")]
+		[JsonProperty("certifiedBot")]
 		internal bool certified;
 
 		[JsonProperty("vanity")]
