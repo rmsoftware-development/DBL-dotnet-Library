@@ -45,7 +45,7 @@ namespace DiscordBotsList.Api.Internal
 		internal DateTime approvedAt;
 
 		[JsonProperty("certifiedBot")]
-		internal bool certified;
+		internal bool certifiedBot;
 
 		[JsonProperty("vanity")]
 		internal string vanity;
@@ -59,7 +59,7 @@ namespace DiscordBotsList.Api.Internal
 
 		public string InviteUrl => customInvite ?? $"https://discordapp.com/oauth2/authorize?&client_id={ Id }&scope=bot";
 
-		public bool IsCertified => certified;
+		public bool IsCertified => certifiedBot;
 
 		public string LibraryUsed => library;
 
